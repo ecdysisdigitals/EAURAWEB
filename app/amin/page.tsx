@@ -69,19 +69,19 @@ export default function AminPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ScrollReveal delay={100}>
               <ResearcherCard
-                name="Researcher"
+                name="GRACE JOY A. BAYANI"
                 role="Mananaliksik"
-                description="Ang mananaliksik ay nagsagawa ng masusing pananaliksik sa limang barangay ng Daet upang maitala ang iba't ibang aspeto ng tradisyong Aurorahan."
-                imageSrc="/placeholder.svg?height=400&width=600"
+                description="Si Grace Joy Andaya Bayani ay mag-aaral mula sa Camarines Norte State College at kasalukuyang nasa ikatlong taon ng kursong Batsilyer sa Pansekondaryang Edukasyon Medyor sa Filipino."
+                imageSrc="/man1.jpg?height=400&width=600"
               />
             </ScrollReveal>
 
             <ScrollReveal delay={200}>
               <ResearcherCard
-                name="Dokumentarista"
-                role="Dokumentarista"
-                description="Ang dokumentarista ay responsable sa pagkuha ng mga larawan at video ng mga pagdiriwang ng Aurorahan."
-                imageSrc="/placeholder.svg?height=400&width=600"
+                name="JOMEL H. RECTO"
+                role="Mananaliksik"
+                description="Si Jomel Hernandez Recto ay kasalukuyang nasa ikatlong taon ng kanyang kursong Batsilyer sa Pansekondaryang Edukasyon Medyor sa Filipino sa Camarines Norte State College."
+                imageSrc="/man2.jpg?height=400&width=600"
               />
             </ScrollReveal>
           </div>
@@ -111,10 +111,10 @@ export default function AminPage() {
 
           <ScrollReveal delay={100}>
             <AdvisorCard
-              name="Tagapagpayo"
-              role="Propesor"
+              name="Edwin R. Ichiano"
+              role="Tagapagpayo"
               description="Ang tagapagpayo ay nagbigay ng mahalagang direksyon at pananaw sa pananaliksik tungkol sa tradisyong Aurorahan."
-              imageSrc="/placeholder.svg?height=400&width=400"
+              imageSrc="/tag1.jpg?height=400&width=400"
             />
           </ScrollReveal>
 
