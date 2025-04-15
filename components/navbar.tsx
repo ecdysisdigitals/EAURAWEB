@@ -120,7 +120,6 @@ export default function Navbar() {
                   exit={{ y: 20, opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
                 </motion.div>
               </AnimatePresence>
             </Button>
@@ -143,7 +142,6 @@ export default function Navbar() {
                 exit={{ y: 20, opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </motion.div>
             </AnimatePresence>
           </Button>
