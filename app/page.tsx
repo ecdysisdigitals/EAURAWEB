@@ -263,7 +263,7 @@ export default function Home() {
             <ScrollReveal delay={400} className="order-1 lg:order-2">
               <div className="relative rounded-lg overflow-hidden aspect-video group">
                  <video
-                    src="/videos/bidyo1.mp4"
+                    src="/images/bidyo1.mp4"
                     autoPlay
                     muted
                     loop
