@@ -11,11 +11,9 @@ export default function HeroLogo() {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!containerRef.current) return
-
       const { left, top, width, height } = containerRef.current.getBoundingClientRect()
       const x = (e.clientX - left - width / 2) / 25
       const y = (e.clientY - top - height / 2) / 25
-
       containerRef.current.style.transform = `perspective(1000px) rotateY(${x}deg) rotateX(${-y}deg)`
     }
 
@@ -38,7 +36,6 @@ export default function HeroLogo() {
     }
   }, [])
 
-  // Simplified particles for better performance
   const particles = Array.from({ length: 12 }).map((_, i) => ({
     id: i,
     x: Math.random() * 100,
@@ -61,7 +58,7 @@ export default function HeroLogo() {
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="absolute w-1 h-1 rounded-full bg-accent/70"
+          className="absolute rounded-full bg-accent/70"
           style={{
             left: `${particle.x}%`,
             top: `${particle.y}%`,
@@ -106,43 +103,43 @@ export default function HeroLogo() {
             className="flex items-center justify-center w-full h-full"
           >
             <div className="relative w-4/5 h-4/5 rounded-full overflow-hidden flex items-center justify-center">
-              <img
+              <Image
                 src="/images/logo.png"
                 alt="Aurorahan Logo"
                 width={160}
                 height={160}
-                className="object-cover rounded-full"
-                style={{ width: "100%", height: "100%" }}
+                className="object-cover rounded-full w-full h-full"
               />
             </div>
           </motion.div>
 
-        {/* Rosary beads - reduced number for better performance */}
-        {Array.from({ length: 6 }).map((_, i) => {
-          const angle = (i * 60 * Math.PI) / 180
-          const x = Math.cos(angle)
-          const y = Math.sin(angle)
-          return (
-            <motion.div
-              key={i}
-              className="absolute w-4 h-4 rounded-full bg-accent shadow-lg shadow-accent/50 rosary-bead"
-              style={{
-                left: `calc(50% + ${x * 50}%)`,
-                top: `calc(50% + ${y * 50}%)`,
-                transformOrigin: "center",
-              }}
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{
-                duration: 2,
-                repeat: Number.POSITIVE_INFINITY,
-                repeatType: "reverse",
-                delay: i * 0.3,
-                ease: "easeInOut",
-              }}
-            />
-          );
-        })}
+          {/* Rosary Beads */}
+          {Array.from({ length: 6 }).map((_, i) => {
+            const angle = (i * 60 * Math.PI) / 180
+            const x = Math.cos(angle)
+            const y = Math.sin(angle)
+            return (
+              <motion.div
+                key={i}
+                className="absolute w-4 h-4 rounded-full bg-accent shadow-lg shadow-accent/50"
+                style={{
+                  left: `calc(50% + ${x * 50}%)`,
+                  top: `calc(50% + ${y * 50}%)`,
+                  transformOrigin: "center",
+                }}
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{
+                  duration: 2,
+                  repeat: Number.POSITIVE_INFINITY,
+                  repeatType: "reverse",
+                  delay: i * 0.3,
+                  ease: "easeInOut",
+                }}
+              />
+            )
+          })}
+        </motion.div>
       </motion.div>
     </div>
-  );
+  )
 }
