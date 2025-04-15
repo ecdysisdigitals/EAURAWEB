@@ -424,8 +424,6 @@ export default function Home() {
         </div>
       </section>
 
-     
-
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground relative">
         <DecorativeElements variant="corner" className="top-4 left-4" />
