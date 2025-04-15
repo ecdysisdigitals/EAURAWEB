@@ -10,7 +10,7 @@ export default function TungkolPage() {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-20 bg-primary text-primary-foreground">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('/images/Prusisyon.png?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
         <div className="hero-gradient absolute inset-0"></div>
 
         <div className="container relative z-10">
