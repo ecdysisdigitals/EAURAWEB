@@ -67,7 +67,7 @@ export default function BarangayPage() {
                 name="Gahonon"
                 patron="San Jose"
                 description="Sa pusod ng bayan ng Daet, sa pagitan ng mga puno ng niyog at palayan, nananahan ang isang barangay na tahimik ngunit matatag, ang Barangay Gahonon."
-                imageSrc="/placeholder.svg?height=400&width=600"
+                imageSrc="/images/San-Jose.png?height=400&width=600"
                 href="/barangay/gahonon"
               />
             </ScrollReveal>
@@ -77,7 +77,7 @@ export default function BarangayPage() {
                 name="Mancruz"
                 patron="San Roque"
                 description="Isang tahimik ngunit makulay na pamayanan sa bayan ang Barangay Mancruz. Sa gitna ng luntiang kapaligiran at simpleng kabuhayan, namamayani ang pagkakaisa at matibay na pananampalataya ng mga mamamayan."
-                imageSrc="/placeholder.svg?height=400&width=600"
+                imageSrc="/images/San-Roque.png?height=400&width=600"
                 href="/barangay/mancruz"
               />
             </ScrollReveal>
@@ -87,7 +87,7 @@ export default function BarangayPage() {
                 name="Pamorangon"
                 patron="Nuestra Señora de Antipolo"
                 description="Sa Barangay Pamorangon, nagsisilbing pagkakataon ang pagdiriwang ng pista upang muling buhayin ang isang tradisyon ng pananampalataya, na tinatawag na Aurorahan."
-                imageSrc="/placeholder.svg?height=400&width=600"
+                imageSrc="/images/Nuestra-Senora-de-Antipolo.png?height=400&width=600"
                 href="/barangay/pamorangon"
               />
             </ScrollReveal>
@@ -97,7 +97,7 @@ export default function BarangayPage() {
                 name="Barangay V"
                 patron="San Roque"
                 description="Isa ang Barangay V, na mas kilala bilang Pandan, sa mga barangay sa bayan ng Daet, na patuloy na nagtataguyod ng tradisyong Aurorahan."
-                imageSrc="/placeholder.svg?height=400&width=600"
+                imageSrc="/images/San-Roque.png?height=400&width=600"
                 href="/barangay/barangay-v"
               />
             </ScrollReveal>
@@ -107,7 +107,7 @@ export default function BarangayPage() {
                 name="Barangay VIII"
                 patron="Nuestra Señora de Peñafrancia"
                 description="Isa ang Barangay VIII, na mas kilala bilang Salcedo, sa mga barangay sa bayan ng Daet na patuloy na nagtataguyod ng tradisyong Aurorahan bilang pagpaparangal kay Nuestra Señora de Peñafrancia."
-                imageSrc="/placeholder.svg?height=400&width=600"
+                imageSrc="/images/Penafrancia.png?height=400&width=600"
                 href="/barangay/barangay-viii"
               />
             </ScrollReveal>
@@ -115,105 +115,7 @@ export default function BarangayPage() {
         </div>
       </section>
 
-      {/* Detailed Barangay Section */}
-      <section className="py-20">
-        <div className="container">
-          <ScrollReveal>
-            <SectionHeading title="Gahonon" subtitle="Patron: San Jose" />
-          </ScrollReveal>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <ScrollReveal delay={200}>
-              <div className="space-y-6">
-                <p>
-                  Sa pusod ng bayan ng Daet, sa pagitan ng mga puno ng niyog at palayan, nananahan ang isang barangay na
-                  tahimik ngunit matatag, ang Barangay Gahonon. Bago pa man bumagtas ang konkretong daan, may isang
-                  panalanging tila ihip ng hangin tuwing hapon, ang Aurorahan.
-                </p>
-
-                <p>
-                  Sa mga unang panahon, wala pang sariling kapilya sa Gahonon. Ngunit hindi ito naging dahilan upang
-                  mawaglit ang tradisyong Aurorahan, na nagmula pa sa mga sinaunang lahi, na sumasalalim sa
-                  pananampalataya ng mga tao sa Gahonon.
-                </p>
-
-                <p>
-                  Tuwing sasapit ang buwan ng Mayo, nagsasama-sama ang mga mamamayan sa pagsasagawa ng Aurorahan. Higit
-                  pa sa isang tradisyon ang Aurorahan, isa itong panatang kanilang isinasabuhay.
-                </p>
-
-                <p>
-                  Sa sentro ng kanilang pananalig, tampok ang isang banal, si San Jose, ang patron ng mga manggagawa.
-                  Para sa mga taga-Gahonon, siya ang simbolo ng lakas sa kanilang araw-araw na pagharap sa mga hamon ng
-                  buhay, dala ang panalangin.
-                </p>
-
-                <div className="pt-4">
-                  <Link href="/barangay/gahonon" className="inline-flex items-center text-accent hover:underline">
-                    Alamin ang higit pa tungkol sa Gahonon
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={400}>
-              <div className="relative rounded-lg overflow-hidden aspect-video">
-                <img
-                  src="/placeholder.svg?height=720&width=1280"
-                  alt="Barangay Gahonon"
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            </ScrollReveal>
-          </div>
-
-          <ScrollReveal>
-            <SectionHeading title="Mancruz" subtitle="Patron: San Roque" />
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <ScrollReveal delay={200} className="order-2 lg:order-1">
-              <div className="space-y-6">
-                <p>
-                  Isang tahimik ngunit makulay na pamayanan sa bayan ang Barangay Mancruz. Sa gitna ng luntiang
-                  kapaligiran at simpleng kabuhayan, namamayani ang pagkakaisa at matibay na pananampalataya ng mga
-                  mamamayan.
-                </p>
-
-                <p>
-                  Sa bawat tahanan, makikita ang kultura ng malasakit at pananalig na patuloy na isinasabuhay ng mga
-                  tao, ang tradisyong Aurorahan. Tuwing Agosto, buong-puso nila itong ipinagdiriwang bilang papuri sa
-                  kanilang patron na si San Roque, ang patron ng mga maysakit.
-                </p>
-
-                <p>
-                  Kinikilala siya bilang tagapangalaga ng mga maysakit at tagapagtanggol laban sa mga salot. Sa kanyang
-                  imahe, makikita ang isang mapagpakumbabang alagad ng Diyos na may sugat sa hita at isang asong
-                  nagdadala ng tinapay, isang paalala ng sakripisyo at kagalingan.
-                </p>
-
-                <div className="pt-4">
-                  <Link href="/barangay/mancruz" className="inline-flex items-center text-accent hover:underline">
-                    Alamin ang higit pa tungkol sa Mancruz
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={400} className="order-1 lg:order-2">
-              <div className="relative rounded-lg overflow-hidden aspect-video">
-                <img
-                  src="/placeholder.svg?height=720&width=1280"
-                  alt="Barangay Mancruz"
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
