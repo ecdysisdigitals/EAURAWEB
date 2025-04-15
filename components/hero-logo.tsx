@@ -117,32 +117,33 @@ export default function HeroLogo() {
             </div>
           </motion.div>
 
-        {/* Rosary beads - reduced number for better performance */}
-        {Array.from({ length: 6 }).map((_, i) => {
-          const angle = (i * 60 * Math.PI) / 180
-          const x = Math.cos(angle)
-          const y = Math.sin(angle)
-          return (
-            <motion.div
-              key={i}
-              className="absolute w-4 h-4 rounded-full bg-accent shadow-lg shadow-accent/50 rosary-bead"
-              style={{
-                left: `calc(50% + ${x * 50}%)`,
-                top: `calc(50% + ${y * 50}%)`,
-                transformOrigin: "center",
-              }}
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{
-                duration: 2,
-                repeat: Number.POSITIVE_INFINITY,
-                repeatType: "reverse",
-                delay: i * 0.3,
-                ease: "easeInOut",
-              }}
-            />
-          );
-        })}
+          {/* Rosary beads - reduced number for better performance */}
+          {Array.from({ length: 6 }).map((_, i) => {
+            const angle = (i * 60 * Math.PI) / 180
+            const x = Math.cos(angle)
+            const y = Math.sin(angle)
+            return (
+              <motion.div
+                key={i}
+                className="absolute w-4 h-4 rounded-full bg-accent shadow-lg shadow-accent/50 rosary-bead"
+                style={{
+                  left: `calc(50% + ${x * 50}%)`,
+                  top: `calc(50% + ${y * 50}%)`,
+                  transformOrigin: "center",
+                }}
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{
+                  duration: 2,
+                  repeat: Number.POSITIVE_INFINITY,
+                  repeatType: "reverse",
+                  delay: i * 0.3,
+                  ease: "easeInOut",
+                }}
+              />
+            )
+          })}
+        </motion.div>
       </motion.div>
     </div>
-  );
+  )
 }
