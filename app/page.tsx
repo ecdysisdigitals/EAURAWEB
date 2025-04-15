@@ -422,131 +422,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Barangay Section */}
-      <section className="py-20 bg-secondary relative">
-        <DecorativeElements variant="accent" className="top-1/4 left-0 w-72 h-72 opacity-30" />
-
-        <div className="container">
-          <ScrollReveal>
-            <SectionHeading
-              eyebrow="Mga Piling Barangay"
-              title="Nagsasagawa ng Aurorahan sa Bayan ng Daet"
-              subtitle="Mayaman sa kultura at tradisyon ang bayan ng Daet, at isang mahalagang bahagi ng buhay ng mga tao rito ang mga relihiyosong gawain tulad ng Aurorahan."
-            />
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ScrollReveal delay={100}>
-              <BarangayCard
-                name="Gahonon"
-                patron="San Jose"
-                description="Sa pusod ng bayan ng Daet, sa pagitan ng mga puno ng niyog at palayan, nananahan ang isang barangay na tahimik ngunit matatag, ang Barangay Gahonon."
-                imageSrc="/placeholder.svg?height=400&width=600"
-                href="/barangay/gahonon"
-              />
-            </ScrollReveal>
-
-            <ScrollReveal delay={200}>
-              <BarangayCard
-                name="Mancruz"
-                patron="San Roque"
-                description="Isang tahimik ngunit makulay na pamayanan sa bayan ang Barangay Mancruz. Sa gitna ng luntiang kapaligiran at simpleng kabuhayan, namamayani ang pagkakaisa at matibay na pananampalataya ng mga mamamayan."
-                imageSrc="/placeholder.svg?height=400&width=600"
-                href="/barangay/mancruz"
-              />
-            </ScrollReveal>
-
-            <ScrollReveal delay={300}>
-              <BarangayCard
-                name="Pamorangon"
-                patron="Nuestra Señora de Antipolo"
-                description="Sa Barangay Pamorangon, nagsisilbing pagkakataon ang pagdiriwang ng pista upang muling buhayin ang isang tradisyon ng pananampalataya, na tinatawag na Aurorahan."
-                imageSrc="/placeholder.svg?height=400&width=600"
-                href="/barangay/pamorangon"
-              />
-            </ScrollReveal>
-
-            <ScrollReveal delay={400}>
-              <BarangayCard
-                name="Barangay V"
-                patron="San Roque"
-                description="Isa ang Barangay V, na mas kilala bilang Pandan, sa mga barangay sa bayan ng Daet, na patuloy na nagtataguyod ng tradisyong Aurorahan."
-                imageSrc="/placeholder.svg?height=400&width=600"
-                href="/barangay/barangay-v"
-              />
-            </ScrollReveal>
-
-            <ScrollReveal delay={500}>
-              <BarangayCard
-                name="Barangay VIII"
-                patron="Nuestra Señora de Peñafrancia"
-                description="Isa ang Barangay VIII, na mas kilala bilang Salcedo, sa mga barangay sa bayan ng Daet na patuloy na nagtataguyod ng tradisyong Aurorahan bilang pagpaparangal kay Nuestra Señora de Peñafrancia."
-                imageSrc="/placeholder.svg?height=400&width=600"
-                href="/barangay/barangay-viii"
-              />
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      {/* Researchers Section */}
-      <section className="py-20 relative">
-        <DecorativeElements variant="accent" className="bottom-1/4 right-0 w-64 h-64 opacity-30" />
-
-        <div className="container">
-          <ScrollReveal>
-            <SectionHeading
-              eyebrow="Mananaliksik"
-              title="Ang mga Nagpapanatili ng Tradisyon"
-              subtitle="Kilalanin ang mga mananaliksik na nagsumikap upang mapanatili at maipasa ang mayamang tradisyon ng Aurorahan sa susunod na henerasyon."
-            />
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ScrollReveal delay={100}>
-              <ResearcherCard
-                name="Maria Santos"
-                role="Pangunahing Mananaliksik"
-                description="Si Maria ay nagsagawa ng masusing pananaliksik sa limang barangay ng Daet upang maitala ang iba't ibang aspeto ng tradisyong Aurorahan. Siya ay nakapanayam ng mahigit 50 deboto at nakasali sa 15 pagdiriwang ng Aurorahan."
-                imageSrc="/placeholder.svg?height=400&width=600"
-              />
-            </ScrollReveal>
-
-            <ScrollReveal delay={200}>
-              <ResearcherCard
-                name="Juan Reyes"
-                role="Dokumentarista"
-                description="Si Juan ay responsable sa pagkuha ng mga larawan at video ng mga pagdiriwang ng Aurorahan. Siya ay naglaan ng tatlong buwan upang makasama ang mga komunidad at maitala ang bawat hakbang ng tradisyon."
-                imageSrc="/placeholder.svg?height=400&width=600"
-              />
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      {/* Advisor Section */}
-      <section className="py-20 bg-secondary relative">
-        <DecorativeElements variant="accent" className="top-1/3 left-0 w-72 h-72 opacity-30" />
-
-        <div className="container">
-          <ScrollReveal>
-            <SectionHeading
-              eyebrow="Tagapagpayo"
-              title="Gabay sa Pananaliksik"
-              subtitle="Ang tagapagpayo ay nagbigay ng mahalagang direksyon at pananaw sa pananaliksik tungkol sa tradisyong Aurorahan."
-            />
-          </ScrollReveal>
-
-          <ScrollReveal delay={100}>
-            <AdvisorCard
-              name="Dr. Elena Fernandez"
-              role="Propesor ng Antropolohiya"
-              description="Si Dr. Fernandez ay isang kilalang eksperto sa mga kultural na tradisyon ng rehiyong Bikol. Siya ay naglaan ng kanyang kaalaman at pananaw upang matiyak na ang pananaliksik ay komprehensibo at tumpak. Sa ilalim ng kanyang paggabay, nakapagdokumento ang mga mananaliksik ng mga aspeto ng Aurorahan na hindi pa naitala noon."
-              imageSrc="/placeholder.svg?height=400&width=400"
-            />
-          </ScrollReveal>
-        </div>
-      </section>
+     
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground relative">
@@ -573,15 +449,7 @@ export default function Home() {
                   whileHover={{ y: -5 }}
                   className="bg-primary-foreground/10 p-4 rounded-lg border border-accent/20 hover:border-accent/50 transition-colors"
                 >
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-3">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Simbahan ni San Juan Bautista"
-                      width={600}
-                      height={400}
-                      className="object-cover"
-                    />
-                  </div>
+               
                   <h3 className="text-accent font-bold mb-2">Simbahan ni San Juan Bautista</h3>
                   <p className="text-sm">Itinatag noong 1611, isa sa pinakamatandang simbahan sa rehiyon.</p>
                 </motion.div>
@@ -590,14 +458,7 @@ export default function Home() {
                   whileHover={{ y: -5 }}
                   className="bg-primary-foreground/10 p-4 rounded-lg border border-accent/20 hover:border-accent/50 transition-colors"
                 >
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-3">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Unang Monumento ni Rizal"
-                      width={600}
-                      height={400}
-                      className="object-cover"
-                    />
+                  
                   </div>
                   <h3 className="text-accent font-bold mb-2">Unang Monumento ni Rizal</h3>
                   <p className="text-sm">Inilunsad noong 1898, ang pinakaunang alaala kay Dr. José Rizal.</p>
@@ -607,14 +468,7 @@ export default function Home() {
                   whileHover={{ y: -5 }}
                   className="bg-primary-foreground/10 p-4 rounded-lg border border-accent/20 hover:border-accent/50 transition-colors"
                 >
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-3">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Bagasbas Beach"
-                      width={600}
-                      height={400}
-                      className="object-cover"
-                    />
+                
                   </div>
                   <h3 className="text-accent font-bold mb-2">Bagasbas Beach</h3>
                   <p className="text-sm">Para sa mga mahilig sa dagat at surfing.</p>
@@ -624,15 +478,7 @@ export default function Home() {
                   whileHover={{ y: -5 }}
                   className="bg-primary-foreground/10 p-4 rounded-lg border border-accent/20 hover:border-accent/50 transition-colors"
                 >
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-3">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Bicol Natural Park"
-                      width={600}
-                      height={400}
-                      className="object-cover"
-                    />
-                  </div>
+                 
                   <h3 className="text-accent font-bold mb-2">Bicol Natural Park</h3>
                   <p className="text-sm">Likas na kagubatan na mayaman sa halaman at hayop.</p>
                 </motion.div>
