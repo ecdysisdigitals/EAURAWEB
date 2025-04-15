@@ -11,9 +11,11 @@ export default function HeroLogo() {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!containerRef.current) return
+
       const { left, top, width, height } = containerRef.current.getBoundingClientRect()
       const x = (e.clientX - left - width / 2) / 25
       const y = (e.clientY - top - height / 2) / 25
+
       containerRef.current.style.transform = `perspective(1000px) rotateY(${x}deg) rotateX(${-y}deg)`
     }
 
@@ -54,11 +56,10 @@ export default function HeroLogo() {
     >
       <div className="absolute inset-0 rounded-full bg-primary/20 backdrop-blur-sm"></div>
 
-      {/* Particles */}
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="absolute rounded-full bg-accent/70"
+          className="absolute w-1 h-1 rounded-full bg-accent/70"
           style={{
             left: `${particle.x}%`,
             top: `${particle.y}%`,
@@ -72,7 +73,7 @@ export default function HeroLogo() {
           }}
           transition={{
             duration: particle.duration,
-            repeat: Number.POSITIVE_INFINITY,
+            repeat: Infinity,
             delay: particle.delay,
           }}
         />
@@ -87,7 +88,7 @@ export default function HeroLogo() {
         <motion.div
           className="absolute inset-0 rounded-full border-2 border-accent/50"
           animate={{ rotate: 360 }}
-          transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         />
 
         <motion.div
@@ -108,12 +109,12 @@ export default function HeroLogo() {
                 alt="Aurorahan Logo"
                 width={160}
                 height={160}
-                className="object-cover rounded-full w-full h-full"
+                className="object-cover rounded-full"
+                style={{ width: "100%", height: "100%" }}
               />
             </div>
           </motion.div>
 
-          {/* Rosary Beads */}
           {Array.from({ length: 6 }).map((_, i) => {
             const angle = (i * 60 * Math.PI) / 180
             const x = Math.cos(angle)
@@ -130,7 +131,7 @@ export default function HeroLogo() {
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{
                   duration: 2,
-                  repeat: Number.POSITIVE_INFINITY,
+                  repeat: Infinity,
                   repeatType: "reverse",
                   delay: i * 0.3,
                   ease: "easeInOut",
