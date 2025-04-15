@@ -11,7 +11,7 @@ export default function PamorangonPage() {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-20 bg-primary text-primary-foreground">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('/images/Nuestra-Senora-de-Antipolo.png?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
         <div className="hero-gradient absolute inset-0"></div>
         <DecorativeElements variant="corner" className="top-20 left-4" />
         <DecorativeElements variant="corner" className="top-20 right-4 rotate-90" />
@@ -63,7 +63,7 @@ export default function PamorangonPage() {
             <ScrollReveal delay={200}>
               <div className="relative rounded-lg overflow-hidden aspect-video">
                 <Image
-                  src="/placeholder.svg?height=720&width=1280"
+                  src="/images/Nuestra-Senora-de-Antipolo.png?height=720&width=1280"
                   alt="Barangay Pamorangon"
                   fill
                   className="object-cover"
@@ -103,7 +103,7 @@ export default function PamorangonPage() {
             <ScrollReveal delay={400} className="order-1 lg:order-2">
               <div className="relative rounded-lg overflow-hidden aspect-video">
                 <Image
-                  src="/placeholder.svg?height=720&width=1280"
+                  src="/images/Nuestra-Senora-de-Antipolo.png?height=720&width=1280"
                   alt="Aurorahan sa Pamorangon"
                   fill
                   className="object-cover"
