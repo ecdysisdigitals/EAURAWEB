@@ -38,6 +38,7 @@ export default function HeroLogo() {
     }
   }, [])
 
+  // Simplified particles for better performance
   const particles = Array.from({ length: 12 }).map((_, i) => ({
     id: i,
     x: Math.random() * 100,
@@ -56,6 +57,7 @@ export default function HeroLogo() {
     >
       <div className="absolute inset-0 rounded-full bg-primary/20 backdrop-blur-sm"></div>
 
+      {/* Particles */}
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
@@ -73,7 +75,7 @@ export default function HeroLogo() {
           }}
           transition={{
             duration: particle.duration,
-            repeat: Infinity,
+            repeat: Number.POSITIVE_INFINITY,
             delay: particle.delay,
           }}
         />
@@ -88,7 +90,7 @@ export default function HeroLogo() {
         <motion.div
           className="absolute inset-0 rounded-full border-2 border-accent/50"
           animate={{ rotate: 360 }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
         />
 
         <motion.div
@@ -115,32 +117,32 @@ export default function HeroLogo() {
             </div>
           </motion.div>
 
-          {Array.from({ length: 6 }).map((_, i) => {
-            const angle = (i * 60 * Math.PI) / 180
-            const x = Math.cos(angle)
-            const y = Math.sin(angle)
-            return (
-              <motion.div
-                key={i}
-                className="absolute w-4 h-4 rounded-full bg-accent shadow-lg shadow-accent/50"
-                style={{
-                  left: `calc(50% + ${x * 50}%)`,
-                  top: `calc(50% + ${y * 50}%)`,
-                  transformOrigin: "center",
-                }}
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  delay: i * 0.3,
-                  ease: "easeInOut",
-                }}
-              />
-            )
-          })}
-        </motion.div>
+        {/* Rosary beads - reduced number for better performance */}
+        {Array.from({ length: 6 }).map((_, i) => {
+          const angle = (i * 60 * Math.PI) / 180
+          const x = Math.cos(angle)
+          const y = Math.sin(angle)
+          return (
+            <motion.div
+              key={i}
+              className="absolute w-4 h-4 rounded-full bg-accent shadow-lg shadow-accent/50 rosary-bead"
+              style={{
+                left: `calc(50% + ${x * 50}%)`,
+                top: `calc(50% + ${y * 50}%)`,
+                transformOrigin: "center",
+              }}
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{
+                duration: 2,
+                repeat: Number.POSITIVE_INFINITY,
+                repeatType: "reverse",
+                delay: i * 0.3,
+                ease: "easeInOut",
+              }}
+            />
+          );
+        })}
       </motion.div>
     </div>
-  )
+  );
 }
