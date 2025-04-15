@@ -119,7 +119,7 @@ export default function Home() {
         ref={heroRef}
         className="relative min-h-screen pt-20 flex items-center justify-center overflow-hidden bg-primary"
       >
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('/images/Andas.png?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
         <div className="hero-gradient absolute inset-0"></div>
 
         {/* Decorative elements */}
@@ -268,12 +268,14 @@ export default function Home() {
 
             <ScrollReveal delay={400} className="order-1 lg:order-2">
               <div className="relative rounded-lg overflow-hidden aspect-video group">
-                <Image
-                  src="/placeholder.svg?height=720&width=1280"
-                  alt="Aurorahan Tradition"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+                 <video
+                    src="/videos/bidyo1.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
+                  />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-20 h-20 rounded-full bg-primary/80 flex items-center justify-center cursor-pointer hover:bg-primary transition-colors group">
                     <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-white border-b-8 border-b-transparent ml-1 group-hover:scale-110 transition-transform"></div>
