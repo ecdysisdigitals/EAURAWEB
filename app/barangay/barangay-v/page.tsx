@@ -1,7 +1,4 @@
->
-Create a new page
-for Barangay V
-:
+
 
 import Image from "next/image"
 import Link from "next/link"
