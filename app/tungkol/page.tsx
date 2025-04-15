@@ -65,7 +65,7 @@ export default function TungkolPage() {
             <ScrollReveal delay={400}>
               <div className="relative rounded-lg overflow-hidden aspect-video">
                 <Image
-                  src="/placeholder.svg?height=720&width=1280"
+                  src="/images/Prusisyon.png?height=720&width=1280"
                   alt="Aurorahan Tradition"
                   fill
                   className="object-cover"
