@@ -106,7 +106,7 @@ export default function HeroLogo() {
             className="flex items-center justify-center w-full h-full"
           >
             <div className="relative w-4/5 h-4/5 rounded-full overflow-hidden flex items-center justify-center">
-              <Image
+              <img
                 src="/images/logo.png"
                 alt="Aurorahan Logo"
                 width={160}
