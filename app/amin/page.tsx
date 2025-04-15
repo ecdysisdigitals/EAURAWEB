@@ -72,7 +72,7 @@ export default function AminPage() {
                 name="GRACE JOY A. BAYANI"
                 role="Mananaliksik"
                 description="Si Grace Joy Andaya Bayani ay mag-aaral mula sa Camarines Norte State College at kasalukuyang nasa ikatlong taon ng kursong Batsilyer sa Pansekondaryang Edukasyon Medyor sa Filipino."
-                imageSrc="/man1.jpg?height=400&width=600"
+                imageSrc="/images/man1.jpg?height=400&width=600"
               />
             </ScrollReveal>
 
@@ -81,7 +81,7 @@ export default function AminPage() {
                 name="JOMEL H. RECTO"
                 role="Mananaliksik"
                 description="Si Jomel Hernandez Recto ay kasalukuyang nasa ikatlong taon ng kanyang kursong Batsilyer sa Pansekondaryang Edukasyon Medyor sa Filipino sa Camarines Norte State College."
-                imageSrc="/man2.jpg?height=400&width=600"
+                imageSrc="/images/man2.jpg?height=400&width=600"
               />
             </ScrollReveal>
           </div>
@@ -114,7 +114,7 @@ export default function AminPage() {
               name="Edwin R. Ichiano"
               role="Tagapagpayo"
               description="Ang tagapagpayo ay nagbigay ng mahalagang direksyon at pananaw sa pananaliksik tungkol sa tradisyong Aurorahan."
-              imageSrc="/tag1.jpg?height=400&width=400"
+              imageSrc="/images/tag1.jpg?height=400&width=400"
             />
           </ScrollReveal>
 
