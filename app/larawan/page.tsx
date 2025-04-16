@@ -89,7 +89,7 @@ export default function LarawanPage() {
                 <p className="text-muted-foreground mb-4">Mga larawan ng pagdarasal at pag-awit ng dalit sa kapilya.</p>
                 <div className="aspect-video relative rounded-md overflow-hidden">
                   <img
-                    src="/iamges/Andas.png?height=400&width=600"
+                    src="/images/Andas.png?height=400&width=600"
                     alt="Pagdarasal"
                     className="object-cover w-full h-full"
                   />
