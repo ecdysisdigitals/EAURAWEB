@@ -442,15 +442,7 @@ export default function Home() {
                   whileHover={{ y: -5 }}
                   className="bg-primary-foreground/10 p-4 rounded-lg border border-accent/20 hover:border-accent/50 transition-colors"
                 >
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-3">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Simbahan ni San Juan Bautista"
-                      width={600}
-                      height={400}
-                      className="object-cover"
-                    />
-                  </div>
+                 
                   <h3 className="text-accent font-bold mb-2">Simbahan ni San Juan Bautista</h3>
                   <p className="text-sm">Itinatag noong 1611, isa sa pinakamatandang simbahan sa rehiyon.</p>
                 </motion.div>
@@ -459,15 +451,7 @@ export default function Home() {
                   whileHover={{ y: -5 }}
                   className="bg-primary-foreground/10 p-4 rounded-lg border border-accent/20 hover:border-accent/50 transition-colors"
                 >
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-3">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Unang Monumento ni Rizal"
-                      width={600}
-                      height={400}
-                      className="object-cover"
-                    />
-                  </div>
+                
                   <h3 className="text-accent font-bold mb-2">Unang Monumento ni Rizal</h3>
                   <p className="text-sm">Inilunsad noong 1898, ang pinakaunang alaala kay Dr. José Rizal.</p>
                 </motion.div>
@@ -476,15 +460,7 @@ export default function Home() {
                   whileHover={{ y: -5 }}
                   className="bg-primary-foreground/10 p-4 rounded-lg border border-accent/20 hover:border-accent/50 transition-colors"
                 >
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-3">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Bagasbas Beach"
-                      width={600}
-                      height={400}
-                      className="object-cover"
-                    />
-                  </div>
+                 
                   <h3 className="text-accent font-bold mb-2">Bagasbas Beach</h3>
                   <p className="text-sm">Para sa mga mahilig sa dagat at surfing.</p>
                 </motion.div>
@@ -493,15 +469,7 @@ export default function Home() {
                   whileHover={{ y: -5 }}
                   className="bg-primary-foreground/10 p-4 rounded-lg border border-accent/20 hover:border-accent/50 transition-colors"
                 >
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-3">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Bicol Natural Park"
-                      width={600}
-                      height={400}
-                      className="object-cover"
-                    />
-                  </div>
+                  
                   <h3 className="text-accent font-bold mb-2">Bicol Natural Park</h3>
                   <p className="text-sm">Likas na kagubatan na mayaman sa halaman at hayop.</p>
                 </motion.div>
