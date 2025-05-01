@@ -118,6 +118,15 @@ export default function AminPage() {
             />
           </ScrollReveal>
 
+          <ScrollReveal delay={100}>
+            <AdvisorCard
+              name="RYAN S. RODRIGUEZ, PhD"
+              role="Tagapagpayo"
+              description="Nagtapos ng kolehiyo sa La Consolacion College-Daet sa kursong Batsilyer sa Pansekondaryang Edukasyon major sa Filipino noong 2005. "
+              imageSrc="/images/tagapayo2.jpg?height=400&width=400"
+            />
+          </ScrollReveal>
+
           <ScrollReveal delay={200}>
             <div className="max-w-3xl mx-auto mt-12 text-center">
               <p className="text-lg">
